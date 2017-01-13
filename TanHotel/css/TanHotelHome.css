@@ -1,0 +1,278 @@
+/*
+   # Dark grey : #333543
+   # Fluo Green :; #dedc00
+   */
+
+/**
+ * Remove default margin.
+ */
+ body {
+ 	margin: 0;
+ }
+
+ /* ::: Links ::: */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+ a:focus {
+ 	outline: thin dotted;
+ }
+
+ a:active,
+ a:hover {
+ 	outline: 0;
+ }
+
+ /* ::: Typography ::: */
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+ small {
+ 	font-size: 80%;
+ }
+
+ /* ::: Embedded content ::: */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+ img {
+ 	border: 0;
+ }
+
+/* GENERAL (APPLIED TO ELEMENTS)
+------------------------------------------ */
+body {
+	font: 100%/1.2 "Myriad Pro", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+h1 {
+	text-transform: lowercase;
+	color: #699F43;
+	font-size: 2.5em;
+	font-weight: lighter;
+}
+
+li {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.main.programsButton{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.more{
+	color: blue;
+}
+
+.more:hover {
+	color: #699F43;
+}
+
+/* CONTAINERS
+------------------------------------------ */
+.banner {
+	border-top: 6px solid #699F43;
+	margin: 0 auto;
+	background: #F18F24;
+	clear: bottom;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	z-index : 1;
+}
+
+.inBanner {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.page {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.container {
+	padding-bottom: 1.9375em;
+}
+
+.main {
+	float: left;
+	padding-right: 2em;
+}
+
+.space {
+	height: 50px;
+}
+
+/* MASTHEAD
+------------------------------------------ */
+.masthead {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	display: block;
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.logo {
+	max-width: 5%;
+	max-height : auto;
+	margin-bottom: -8px;
+	margin-top: 0;
+}
+
+
+/* ::: Main Navigation ::: */
+.nav-main {
+	margin-bottom: 0;
+	padding: .45em 0 .5em;
+	position: absolute;
+	left: 220px;
+	top: 0px;
+}
+
+/*
+.nav-main li {
+	display: inline-block;
+	text-align: center;
+}
+*/
+
+.nav-main li {
+	height: auto;
+	width: auto; 
+	float: left;
+	text-align: center;
+}
+
+.nav-main li:first-child{
+	border-left: none;
+	border-right:none;
+}
+
+/*
+.nav-main a {
+	color: white;
+	display: inline-block;
+	font-size: 1.125em; 
+	padding: 1em 1em .6em 1em;
+}
+*/
+
+.nav-main li ul {
+	display: none;  
+	height: auto;
+	width: 100%;									
+	margin: 0; 
+	padding: 0;
+	position: absolute;
+	top: 55px;
+}
+
+.nav-main li ul li {
+	background-color: #54879d;
+}
+
+.nav-main a {
+	color: white;
+	display: block;
+	font-size: 1.125em; 
+	padding: 1em 1em .6em 1em;
+}
+
+.nav-main a:hover {
+	color: none;
+	text-decoration: none;
+	background-color: #699F43;
+}
+
+.nav-main .current-page,
+.nav-main .current-page:hover {
+	color: white;
+	background-color: #699F43;
+	cursor: default;
+}
+
+
+/* MAIN CONTENT
+------------------------------------------ */
+.main > .post:first-child > h1 {
+	margin-top: 0.904em;
+}
+
+.background_pic {
+	width: 100%;
+	background-position:  absolute;
+	margin-bottom: 0.904em;
+}
+
+h1 {
+	margin-bottom: .4125em;
+}
+
+.post-photo {
+	float: left;
+	margin-bottom: 3px;
+	margin-right: 22px;
+	max-width: 60%;
+}
+
+.post-blurb p {
+	color: gray;
+	font-size: 1.3em;
+	line-height: 1.4;
+}
+
+/* ::: Blog Post Footer ::: */
+.post-footer {
+	border-bottom: 1px solid #dbdbdb;
+	border-top: 1px solid #dbdbdb;
+	padding-bottom: .7em;
+	padding-top: .7em;
+}
+
+.post-footer time:before {
+	content: '•  ';
+}
+
+.footer p {
+	color: #3a3a3a;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.688em;
+}
+
+.footer p small {
+	font-size: inherit;
+}
+
+
+/* FOOTER
+------------------------------------------ */
+
+footer[role="contentinfo"]  p {
+	color: white;
+}
+
+footer[role="contentinfo"] {
+	color: white !important;
+	background: #F18F24;
+	padding: 0.313em 0.625em 0.625em;
+	border-top: 1px solid #cacbcb;
+	text-align: center;
+}
+
+
+
+/* html5boilerplate.com Clearfix
+--------------------------------- */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
