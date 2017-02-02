@@ -16,342 +16,331 @@ import java.io.PrintWriter;
 
 public class CreateDatabase {
 
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter fileCompanyName = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/CompanyName")));
-	//		BufferedReader brN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/companyN.txt"));
-	//		BufferedReader brL = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/companyL.txt"));
-	//
-	//		String companyName;
-	//		String companyLocation;
-	//		int count = 1;
-	//
-	//		while ((companyName = brN.readLine()) != null && (companyLocation = brL.readLine()) != null) {
-	//			String companyName2 = companyName.replaceAll("'","");
-	//			String companyLocation2 = companyLocation.replaceAll("'","");
-	//			String value;
-	//			value = "('" +companyName2+ "', '" +companyLocation2+ "', " +count+ "),";
-	//			count++;
-	//			fileCompanyName.println(value);
-	//		}
-	//
-	//		brN.close();
-	//		brL.close();
-	//		fileCompanyName.close();
-	//	}
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter fileCompanyName = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/CompanyName")));
+  //		BufferedReader brN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/companyN.txt"));
+  //		BufferedReader brL = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/companyL.txt"));
+  //
+  //		String companyName;
+  //		String companyLocation;
+  //		int count = 1;
+  //
+  //		while ((companyName = brN.readLine()) != null && (companyLocation = brL.readLine()) != null) {
+  //			String companyName2 = companyName.replaceAll("'","");
+  //			String companyLocation2 = companyLocation.replaceAll("'","");
+  //			String value;
+  //			value = "('" +companyName2+ "', '" +companyLocation2+ "', " +count+ "),";
+  //			count++;
+  //			fileCompanyName.println(value);
+  //		}
+  //
+  //		brN.close();
+  //		brL.close();
+  //		fileCompanyName.close();
+  //	}
 
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter fileCompanyMembers = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/CompanyMembers")));
-	//		BufferedReader brN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/companyN.txt"));
-	//		BufferedReader brFN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/firstName5495.txt"));
-	//		BufferedReader brLN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/lastName88800.txt"));
-	//		BufferedReader brCP = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/positionCompany30.txt"));
-	//
-	//		List<String> firstNames = new ArrayList<String>();
-	//		List<String> lastNames = new ArrayList<String>();
-	//		List<String> companyPositions = new ArrayList<String>();
-	//
-	//		String firstName;
-	//		String lastName;
-	//		String companyPosition;
-	//		int min = 0;
-	//		int minR = 1;
-	//		int maxR = 10;
-	//		int maxF = 5495;
-	//		int maxL = 88800;
-	//		int maxP = 30;
-	//		int minA = 20;
-	//		int maxA = 120;
-	//
-	//		while ((firstName = brFN.readLine()) != null) {
-	//			firstNames.add(firstName);
-	//		}
-	//
-	//		while ((lastName = brLN.readLine()) != null) {
-	//			lastNames.add(lastName);
-	//		}
-	//
-	//		while ((companyPosition = brCP.readLine()) != null) {
-	//			companyPositions.add(companyPosition);
-	//		}
-	//
-	//		String companyName;
-	//
-	//		while ((companyName = brN.readLine()) != null) {
-	//			String companyName2 = companyName.replaceAll("'","");
-	//			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
-	//
-	//			for(int i=0; i<randomRange; i++){
-	//				String companyLastName = lastNames.get(min + (int)(Math.random() * ((maxL - min))));
-	//				String companyFirstName = firstNames.get(min + (int)(Math.random() * ((maxF - min))));
-	//				int age = (minA + (int)(Math.random() * ((maxA - minA))));
-	//				String position = companyPositions.get(min + (int)(Math.random() * ((maxP - min))));;
-	//
-	//				String value;
-	//				value = "('" +companyName2+ "', '" +companyLastName+ "', '" +companyFirstName+ "', " +age+ ", '" +position+ "'),";
-	//				fileCompanyMembers.println(value);
-	//			}
-	//
-	//		}
-	//
-	//		brN.close();
-	//		brFN.close();
-	//		brLN.close();
-	//		brCP.close();
-	//		fileCompanyMembers.close();
-	//	}
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter fileCompanyMembers = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/CompanyMembers")));
+  //		BufferedReader brN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/companyN.txt"));
+  //		BufferedReader brFN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/firstName5495.txt"));
+  //		BufferedReader brLN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/lastName88800.txt"));
+  //		BufferedReader brCP = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/positionCompany30.txt"));
+  //
+  //		List<String> firstNames = new ArrayList<String>();
+  //		List<String> lastNames = new ArrayList<String>();
+  //		List<String> companyPositions = new ArrayList<String>();
+  //
+  //		String firstName;
+  //		String lastName;
+  //		String companyPosition;
+  //		int min = 0;
+  //		int minR = 1;
+  //		int maxR = 10;
+  //		int maxF = 5495;
+  //		int maxL = 88800;
+  //		int maxP = 30;
+  //		int minA = 20;
+  //		int maxA = 120;
+  //
+  //		while ((firstName = brFN.readLine()) != null) {
+  //			firstNames.add(firstName);
+  //		}
+  //
+  //		while ((lastName = brLN.readLine()) != null) {
+  //			lastNames.add(lastName);
+  //		}
+  //
+  //		while ((companyPosition = brCP.readLine()) != null) {
+  //			companyPositions.add(companyPosition);
+  //		}
+  //
+  //		String companyName;
+  //
+  //		while ((companyName = brN.readLine()) != null) {
+  //			String companyName2 = companyName.replaceAll("'","");
+  //			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
+  //
+  //			for(int i=0; i<randomRange; i++){
+  //				String companyLastName = lastNames.get(min + (int)(Math.random() * ((maxL - min))));
+  //				String companyFirstName = firstNames.get(min + (int)(Math.random() * ((maxF - min))));
+  //				int age = (minA + (int)(Math.random() * ((maxA - minA))));
+  //				String position = companyPositions.get(min + (int)(Math.random() * ((maxP - min))));;
+  //
+  //				String value;
+  //				value = "('" +companyName2+ "', '" +companyLastName+ "', '" +companyFirstName+ "', " +age+ ", '" +position+ "'),";
+  //				fileCompanyMembers.println(value);
+  //			}
+  //
+  //		}
+  //
+  //		brN.close();
+  //		brFN.close();
+  //		brLN.close();
+  //		brCP.close();
+  //		fileCompanyMembers.close();
+  //	}
 
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter fileFacilities = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Facilities")));
+  //		BufferedReader brFa = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/hotelFacilities29.txt"));
+  //
+  //		String facility;
+  //
+  //		int min = 0;
+  //		int minR = 100;
+  //		int maxR = 2000;
+  //		int maxF = 5495;
+  //		int maxL = 88800;
+  //		int maxP = 30;
+  //		int minA = 20;
+  //		int maxA = 120;
+  //
+  //		int count = 1;
+  //		while ((facility = brFa.readLine()) != null) {
+  //			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
+  //
+  //			String value;
+  //			value = "(" +count+ ", " +randomRange+ ", '" +facility+ "'),";
+  //			fileFacilities.println(value);
+  //			count++;
+  //		}
+  //
+  //		brFa.close();
+  //		fileFacilities.close();
+  //	}
 
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter fileFacilities = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Facilities")));
-	//		BufferedReader brFa = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/hotelFacilities29.txt"));
-	//
-	//		String facility;
-	//
-	//		int min = 0;
-	//		int minR = 100;
-	//		int maxR = 2000;
-	//		int maxF = 5495;
-	//		int maxL = 88800;
-	//		int maxP = 30;
-	//		int minA = 20;
-	//		int maxA = 120;
-	//
-	//		int count = 1;
-	//		while ((facility = brFa.readLine()) != null) {
-	//			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
-	//			
-	//			String value;
-	//			value = "(" +count+ ", " +randomRange+ ", '" +facility+ "'),";
-	//			fileFacilities.println(value);
-	//			count++;
-	//		}
-	//
-	//		brFa.close();
-	//		fileFacilities.close();
-	//	}
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter fileFacilitiesUsed = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/FacilitiesUsed")));
+  //
+  //		int min = 0;
+  //		int minR = 1;
+  //		int maxR = 29;
+  //		int maxF = 5000;
+  //
+  //		for (int count = 1; count<=maxF; count++){
+  //			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
+  //
+  //			String value;
+  //			value = "(" +randomRange+ ", " +count+ "),";
+  //			fileFacilitiesUsed.println(value);
+  //		}
+  //
+  //		fileFacilitiesUsed.close();
+  //	}
 
+  public static void main(String[] args) throws IOException {
+    //creating new files were values will be written
+    PrintWriter fileFamily = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Family")));
+    PrintWriter fileFamilyMembers = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/FamilyMembers")));
+    //opening files were data is stored
+    BufferedReader brFN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/firstName5495.txt"));
+    BufferedReader brLN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/lastName88800.txt"));
+    BufferedReader brC = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/cities59405.txt"));
 
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter fileFacilitiesUsed = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/FacilitiesUsed")));
-	//
-	//		int min = 0;
-	//		int minR = 1;
-	//		int maxR = 29;
-	//		int maxF = 5000;
-	//
-	//		for (int count = 1; count<=maxF; count++){
-	//			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
-	//			
-	//			String value;
-	//			value = "(" +randomRange+ ", " +count+ "),";
-	//			fileFacilitiesUsed.println(value);
-	//		}
-	//
-	//		fileFacilitiesUsed.close();
-	//	}
+    //declaring new lists to temporarily store data
+    List<String> firstNames = new ArrayList<String>();
+    List<String> lastNames = new ArrayList<String>();
+    List<String> cities = new ArrayList<String>();
 
+    String firstName;
+    String lastName;
+    String city;
 
-	public static void main(String[] args) throws IOException 
-	{
-		//creating new files were values will be written
-		PrintWriter fileFamily = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Family")));
-		PrintWriter fileFamilyMembers = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/FamilyMembers")));
-		//opening files were data is stored
-		BufferedReader brFN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/firstName5495.txt"));
-		BufferedReader brLN = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/lastName88800.txt"));
-		BufferedReader brC = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/cities59405.txt"));
+    int min = 0;
+    int minR = 1;
+    int maxR = 5;
+    int maxF = 5495;
+    int maxL = 88800;
+    int maxC = 59405;
+    int minA = 1;
+    int maxA = 120;
+    int minPN = 111111111;
+    int maxPN = 999999999;
 
-		//declaring new lists to temporarily store data
-		List<String> firstNames = new ArrayList<String>();
-		List<String> lastNames = new ArrayList<String>();
-		List<String> cities = new ArrayList<String>();
+    //storing data into lists
+    while ((firstName = brFN.readLine()) != null) {
+      firstNames.add(firstName);
+    }
 
-		String firstName;
-		String lastName;
-		String city;
+    while ((lastName = brLN.readLine()) != null) {
+      lastNames.add(lastName);
+    }
 
-		int min = 0;
-		int minR = 1;
-		int maxR = 5;
-		int maxF = 5495;
-		int maxL = 88800;
-		int maxC = 59405;
-		int minA = 1;
-		int maxA = 120;
-		int minPN = 111111111;
-		int maxPN = 999999999;
+    while ((city = brC.readLine()) != null) {
+      cities.add(city);
+    }
 
-		//storing data into lists
-		while ((firstName = brFN.readLine()) != null) {
-			firstNames.add(firstName);
-		}
+    int count = 2001;
 
-		while ((lastName = brLN.readLine()) != null) {
-			lastNames.add(lastName);
-		}
+    //creating random new values
+    for (int i = 1; i <= 3000; i++) {
+      String familyLastName = lastNames.get(min + (int) (Math.random() * ((maxL - min))));
+      int randomRange = minR + (int) (Math.random() * ((maxR - minR) + 1));
+      String theCity = cities.get(min + (int) (Math.random() * ((maxC - min))));
+      int thePhone = (minPN + (int) (Math.random() * ((maxPN - minPN))));
+      for (int j = 0; j < randomRange; j++) {
+        String familyFirstName = firstNames.get(min + (int) (Math.random() * ((maxF - min))));
+        int age = (minA + (int) (Math.random() * ((maxA - minA))));
 
-		while ((city = brC.readLine()) != null) {
-			cities.add(city);
-		}
+        String value1;
+        value1 = "('" + familyLastName + "', '" + familyFirstName + "', " + age + ", " + i + "),";
+        fileFamilyMembers.println(value1);
+      }
 
-		int count = 2001;
+      String value2;
+      value2 = "(" + i + ", '" + familyLastName + "', '" + theCity + "', " + thePhone + ", " + count + "),";
+      fileFamily.println(value2);
+      count++;
+    }
 
-		//creating random new values
-		for(int i=1; i<=3000; i++){
-			String familyLastName = lastNames.get(min + (int)(Math.random() * ((maxL - min))));
-			int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
-			String theCity = cities.get(min + (int)(Math.random() * ((maxC - min))));
-			int thePhone = (minPN + (int)(Math.random() * ((maxPN - minPN))));
-			for(int j=0; j<randomRange; j++){
-				String familyFirstName = firstNames.get(min + (int)(Math.random() * ((maxF - min))));
-				int age = (minA + (int)(Math.random() * ((maxA - minA))));
+    brFN.close();
+    brLN.close();
+    brC.close();
+    fileFamily.close();
+    fileFamilyMembers.close();
+  }
 
-				String value1;
-				value1 = "('" +familyLastName+ "', '" +familyFirstName+ "', " +age+ ", " +i+ "),";
-				fileFamilyMembers.println(value1);
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter fileFood = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Food")));
+  //		BufferedReader brFa = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/food180.txt"));
+  //
+  //		String food;
+  //
+  //		int minP = 10;
+  //		int maxP = 99;
+  //
+  //		int count = 1;
+  //		while ((food = brFa.readLine()) != null) {
+  //			int randomPrice = minP + (int)(Math.random() * ((maxP - minP) + 1));
+  //
+  //			String value;
+  //			value = "(" +count+ ", " +randomPrice+ ", '" +food+ "'),";
+  //			fileFood.println(value);
+  //			count++;
+  //		}
+  //
+  //		brFa.close();
+  //		fileFood.close();
+  //	}
 
-			}
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter fileId = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/GuestID")));
+  //
+  //		for(int i=1; i<=5000; i++) {
+  //
+  //			String value;
+  //			value = "(" +i+ "),";
+  //			fileId.println(value);
+  //		}
+  //
+  //		fileId.close();
+  //	}
 
-			String value2;
-			value2 = "(" +i+ ", '" +familyLastName+ "', '" +theCity+ "', " +thePhone+ ", " +count+ "),";
-			fileFamily.println(value2);
-			count++;
+  // public static void main(String[] args) throws IOException
+  // {
+  // 	PrintWriter fileOrder = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Orders")));
 
-		}
+  // 	String food;
 
-		brFN.close();
-		brLN.close();
-		brC.close();
-		fileFamily.close();
-		fileFamilyMembers.close();
-	}
+  // 	int minR = 1;
+  // 	int maxR = 10;
 
+  // 	int minFood = 1;
+  // 	int maxFood = 180;
 
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter fileFood = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Food")));
-	//		BufferedReader brFa = new BufferedReader(new FileReader("/Users/AlSyR/Downloads/food180.txt"));
-	//
-	//		String food;
-	//
-	//		int minP = 10;
-	//		int maxP = 99;
-	//
-	//		int count = 1;
-	//		while ((food = brFa.readLine()) != null) {
-	//			int randomPrice = minP + (int)(Math.random() * ((maxP - minP) + 1));
-	//
-	//			String value;
-	//			value = "(" +count+ ", " +randomPrice+ ", '" +food+ "'),";
-	//			fileFood.println(value);
-	//			count++;
-	//		}
-	//
-	//		brFa.close();
-	//		fileFood.close();
-	//	}
+  // 	int minDay = 10;
+  // 	int maxDay = 30;
 
+  // 	int minHour = 1;
+  // 	int maxHour = 9;
 
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter fileId = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/GuestID")));
-	//
-	//		for(int i=1; i<=5000; i++) {
-	//
-	//			String value;
-	//			value = "(" +i+ "),";
-	//			fileId.println(value);
-	//		}
-	//
-	//		fileId.close();
-	//	}
+  // 	int minMS = 10;
+  // 	int maxMS = 59;
 
-		// public static void main(String[] args) throws IOException 
-		// {
-		// 	PrintWriter fileOrder = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Orders")));
-	
+  // 	int count = 1;
+  // 	for(int i=1; i<=5000; i++){
+  // 		int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
 
-		// 	String food;
-	
-		// 	int minR = 1;
-		// 	int maxR = 10;
+  // 		for(int j=0; j<randomRange; j++){
+  // 			int randomFood = minFood + (int)(Math.random() * ((maxFood - minFood) + 1));
+  // 			int randomquantity = minR + (int)(Math.random() * ((maxR - minR) + 1));
+  // 			int randomDay = minDay + (int)(Math.random() * ((maxDay - minDay) + 1));
+  // 			int randomHour = minHour + (int)(Math.random() * ((maxHour - minHour) + 1));
+  // 			int randomMin = minMS + (int)(Math.random() * ((maxMS - minMS) + 1));
+  // 			int randomSec = minMS + (int)(Math.random() * ((maxMS - minMS) + 1));
 
-		// 	int minFood = 1;
-		// 	int maxFood = 180;
+  // 			String value;
+  // 			value = "(" +count+ ", " +i+ ", " +randomFood+ ", '2015-11-" +randomDay+ "', '0" +randomHour+ ":" +randomMin+ ":" +randomSec+ "', " +randomquantity+ "),";
+  // 			fileOrder.println(value);
+  // 			count++;
+  // 		}
 
-		// 	int minDay = 10;
-		// 	int maxDay = 30;
+  // 	}
 
-		// 	int minHour = 1;
-		// 	int maxHour = 9;
+  // 	fileOrder.close();
+  // }
 
-		// 	int minMS = 10;
-		// 	int maxMS = 59;
-	
-		// 	int count = 1;
-		// 	for(int i=1; i<=5000; i++){
-		// 		int randomRange = minR + (int)(Math.random() * ((maxR - minR) + 1));
-	
-		// 		for(int j=0; j<randomRange; j++){
-		// 			int randomFood = minFood + (int)(Math.random() * ((maxFood - minFood) + 1));
-		// 			int randomquantity = minR + (int)(Math.random() * ((maxR - minR) + 1));
-		// 			int randomDay = minDay + (int)(Math.random() * ((maxDay - minDay) + 1));
-		// 			int randomHour = minHour + (int)(Math.random() * ((maxHour - minHour) + 1));
-		// 			int randomMin = minMS + (int)(Math.random() * ((maxMS - minMS) + 1));
-		// 			int randomSec = minMS + (int)(Math.random() * ((maxMS - minMS) + 1));
-	
-		// 			String value;
-		// 			value = "(" +count+ ", " +i+ ", " +randomFood+ ", '2015-11-" +randomDay+ "', '0" +randomHour+ ":" +randomMin+ ":" +randomSec+ "', " +randomquantity+ "),";
-		// 			fileOrder.println(value);
-		// 			count++;
-		// 		}		
+  //	public static void main(String[] args) throws IOException
+  //	{
+  //		PrintWriter filePayment = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Payments")));
+  //
+  //		List<String> methodPayment = new ArrayList<String>();
+  //		methodPayment.add("Check");
+  //		methodPayment.add("Cash");
+  //		methodPayment.add("Credit Card");
+  //
+  //		int minR = 1;
+  //		int maxR = 10;
+  //
+  //		int minAmount = 10000;
+  //		int maxAmount = 999999;
+  //
+  //		int minDay = 10;
+  //		int maxDay = 30;
+  //
+  //		int minMethod = 0;
+  //		int maxMethod = 2;
+  //
+  //		for(int i=1; i<=5000; i++){
+  //			int randomAmount = minAmount + (int)(Math.random() * ((maxAmount - minAmount) + 1));
+  //			int randomDay = minDay + (int)(Math.random() * ((maxDay - minDay) + 1));
+  //			int randomMethod = minMethod + (int)(Math.random() * ((maxMethod - minMethod) + 1));
+  //
+  //			String value;
+  //			value = "(" +i+ ", " +randomAmount+ ", '2016-01-" +randomDay+ "', '" +methodPayment.get(randomMethod)+ "', " +i+ "),";
+  //			filePayment.println(value);
+  //		}
+  //
+  //		filePayment.close();
+  //	}
 
-		// 	}
-	
-		// 	fileOrder.close();
-		// }
-
-
-	//	public static void main(String[] args) throws IOException 
-	//	{
-	//		PrintWriter filePayment = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Payments")));
-	//
-	//		List<String> methodPayment = new ArrayList<String>();
-	//		methodPayment.add("Check");
-	//		methodPayment.add("Cash");
-	//		methodPayment.add("Credit Card");
-	//
-	//		int minR = 1;
-	//		int maxR = 10;
-	//
-	//		int minAmount = 10000;
-	//		int maxAmount = 999999;
-	//
-	//		int minDay = 10;
-	//		int maxDay = 30;
-	//
-	//		int minMethod = 0;
-	//		int maxMethod = 2;
-	//
-	//		for(int i=1; i<=5000; i++){
-	//			int randomAmount = minAmount + (int)(Math.random() * ((maxAmount - minAmount) + 1));
-	//			int randomDay = minDay + (int)(Math.random() * ((maxDay - minDay) + 1));
-	//			int randomMethod = minMethod + (int)(Math.random() * ((maxMethod - minMethod) + 1));
-	//
-	//			String value;
-	//			value = "(" +i+ ", " +randomAmount+ ", '2016-01-" +randomDay+ "', '" +methodPayment.get(randomMethod)+ "', " +i+ "),";
-	//			filePayment.println(value);
-	//		}		
-	//
-	//		filePayment.close();
-	//	}
-
-
-//	public static void main(String[] args) throws IOException 
+//	public static void main(String[] args) throws IOException
 //	{
 //		PrintWriter fileRoom = new PrintWriter((new FileWriter("/Users/AlSyR/Downloads/Room")));
 //
